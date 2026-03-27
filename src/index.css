@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Be Vietnam Pro", "Sarabun", sans-serif;
+  --font-body: "Plus Jakarta Sans", "Sarabun", sans-serif;
+  --font-label: "Plus Jakarta Sans", "Sarabun", sans-serif;
+
+  --color-primary: #4edea3;
+  --color-on-primary: #003824;
+  --color-surface: #131313;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #bfc9c3;
+  --color-surface-container: #201f1f;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-high: #2a2a2a;
+  --color-outline-variant: #404944;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap');
